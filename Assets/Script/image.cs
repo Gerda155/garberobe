@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class image : MonoBehaviour
 {
@@ -81,5 +82,6 @@ public class image : MonoBehaviour
     {
         shoes3.SetActive(value);
     }
+
 }
 
