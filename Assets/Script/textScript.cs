@@ -29,9 +29,9 @@ public class textScript : MonoBehaviour
     {
         heroHolder.GetComponent<Image>().sprite = spriteArray[index];
         if(index == 0)
-            scroll.GetComponent<Text>().text = "text pro Gerda";
+            scroll.GetComponent<Text>().text = "Gerda ir parasta LVT 2PT skolniece, mil matematiku, latviešu zenus un neformalus koncetus. Sapno par jaunu tatovejumu. Iepriekseja dzive bijusi zurka vai varna.";
         else if(index == 1)
-            scroll.GetComponent<Text>().text = "text pro Polina";
+            scroll.GetComponent<Text>().text = "Polinai piemeklets skujms liktenis, vina nav uznemta makslas skola, tapec vinai jamacas LVT un jaraud pec katras lekcijas. Ir vajas puses savu roku/kaju un jutu pret sliktajiem cilvekiem veida.";
 
     }
 }

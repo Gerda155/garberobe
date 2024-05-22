@@ -9,16 +9,18 @@ public class ImageSizeandDrag : MonoBehaviour, IDragHandler
     public GameObject sizeSliderY;
     public GameObject sizeSliderX;
     public GameObject imageHolder;
+    private RectTransform rTransForm;
+    public Canvas canv;
 
     public void changeSize()
     {
+        float posX = imageHolder.GetComponent<Transform>().localPosition.x;
         float sizeX = sizeSliderX.GetComponent<Slider>().value;
         float sizeY = sizeSliderY.GetComponent<Slider>().value;
-        imageHolder.transform.localScale = new Vector2(1F * sizeX, 1F * sizeY);
-    }
 
-    private RectTransform rTransForm;
-    public Canvas canv;
+        if(posX < 0)
+            imageHolder.transform.localScale = new Vector2(sizeX, sizeY);
+    }
 
     void Start()
     {
