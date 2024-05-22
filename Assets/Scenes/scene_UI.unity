@@ -5080,8 +5080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.3596, y: 53.464}
-  m_SizeDelta: {x: 251.0408, y: 101.51}
+  m_AnchoredPosition: {x: -70.85399, y: 35.5}
+  m_SizeDelta: {x: 205.506, y: 101.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922108764
 MonoBehaviour:
@@ -5110,13 +5110,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ...
+  m_Text: 
 --- !u!222 &922108765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5496,6 +5496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044107638}
   - component: {fileID: 1044107639}
+  - component: {fileID: 1044107640}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -5548,6 +5549,26 @@ MonoBehaviour:
   shoes1: {fileID: 589976808}
   shoes2: {fileID: 260033283}
   shoes3: {fileID: 1878905291}
+--- !u!114 &1044107640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044107637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dec7ba8bdcccf40a945f8975b6f75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 0}
+  inputFieldAge: {fileID: 0}
+  displayField: {fileID: 0}
+  heroHolder: {fileID: 1792326348}
+  scroll: {fileID: 1499923750}
+  spriteArray:
+  - {fileID: 21300000, guid: 0d869fd00e618734d874fc66db410e64, type: 3}
+  - {fileID: 21300000, guid: 55b5e97b159132c4e875a69e210d1e5f, type: 3}
 --- !u!1 &1059183916
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,9 +6786,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'fdfsdfsf
-
-'
+  m_Text: 
 --- !u!222 &1499923753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9681,6 +9700,9 @@ MonoBehaviour:
   inputField: {fileID: 1963983696}
   inputFieldAge: {fileID: 1814306691}
   displayField: {fileID: 922108762}
+  heroHolder: {fileID: 0}
+  scroll: {fileID: 0}
+  spriteArray: []
 --- !u!1 &1910002207
 GameObject:
   m_ObjectHideFlags: 0
@@ -10095,12 +10117,24 @@ MonoBehaviour:
   m_Options:
     m_Options:
     - m_Text: Gerda
-      m_Image: {fileID: 0}
-    - m_Text: Tetja 3
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 21300000, guid: 0d869fd00e618734d874fc66db410e64, type: 3}
+    - m_Text: Polina
+      m_Image: {fileID: 21300000, guid: 55b5e97b159132c4e875a69e210d1e5f, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1044107640}
+        m_TargetAssemblyTypeName: textScript, Assembly-CSharp
+        m_MethodName: changeHero
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1950586234
 MonoBehaviour:
